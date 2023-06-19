@@ -13,22 +13,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppComponent from './components/AppComponent';
+import App from './components/App';
 
-ReactDOM.render(
-  <div>
-    <AppComponent
-      name="Beyonce"
-      src="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
-      number="+123 456 789"
-      site="b@beyonce.com"
-    />
-    <AppComponent
-      name="Beyonce"
-      src="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
-      number="+123 456 789"
-      site="b@beyonce.com"
-    />
-  </div>,
+ReactDOM.render(<App/>,
   document.querySelector('#root')
 );
