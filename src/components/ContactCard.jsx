@@ -1,20 +1,17 @@
 import React from 'react';
+import Avatar from './Avatar';
 
 function ContactCard(props) {
-  const name = props.name;
-  const image = props.image;
-  const email = props.email;
-  const phone = props.phone;
 
   return (
     <div className="card">
       <div className="top">
-        <h2 className="name">{name}</h2>
-        <img className="circle-img" src={image} alt="avatar_img" />
+        <h2 className="name">{props.name}</h2>
+        <Avatar img={props.image} />
       </div>
       <div className="bottom">
-        <p className="info">{phone}</p>
-        <p className="info">{email}</p>
+        <p className="info">{props.phone}</p>
+        <p className="info">{props.email}</p>
       </div>
     </div>
   );
