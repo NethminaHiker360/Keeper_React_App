@@ -23,6 +23,10 @@ console.log('Acumulate Value : ' + acumuateValue);
 var findNumber=numbers.find(function(num){
     return num>10 && num<50;
 });
-console.log(findNumber);
+console.log("Find Value : "+findNumber);
 
 //FindIndex - find the index of the first item that matches.
+var findNumberindex = numbers.findIndex(function (num) {
+  return num > 10 && num < 50;
+});
+console.log("find Index : "+findNumberindex);
