@@ -20,5 +20,9 @@ var acumuateValue=numbers.reduce(function(acumutaleNumber,currentNumber){
 console.log('Acumulate Value : ' + acumuateValue);
 
 //Find - find the first item that matches from an array.
+var findNumber=numbers.find(function(num){
+    return num>10 && num<50;
+});
+console.log(findNumber);
 
 //FindIndex - find the index of the first item that matches.
