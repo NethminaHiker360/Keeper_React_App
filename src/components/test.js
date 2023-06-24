@@ -14,6 +14,11 @@ console.log("Filter Array : "+filterArray)
 
 //Reduce - Accumulate a value by doing something to each item in an array.
 
+var acumuateValue=numbers.reduce(function(acumutaleNumber,currentNumber){
+    return acumutaleNumber+currentNumber;
+});
+console.log('Acumulate Value : ' + acumuateValue);
+
 //Find - find the first item that matches from an array.
 
 //FindIndex - find the index of the first item that matches.
