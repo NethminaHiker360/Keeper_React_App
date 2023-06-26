@@ -1,27 +1,17 @@
 import React from 'react';
-import EmojiCard from './EmojiCard';
-import emojipedia from '../emojipedia';
-
-function createEmojiCard(detail) {
-  return (
-    <EmojiCard
-      key={detail.id}
-      emoji={detail.emoji}
-      name={detail.name}
-      meaning={detail.meaning}
-    />
-  );
-}
+import Header from './Header';
+import Footer from './Footer';
+import Note from './Note';
+import notes from '../notes';
 
 function App() {
   return (
     <div>
-      <h1>
-        <span>emojipedia</span>
-      </h1>
-      <dl className="dictionary">
-      {emojipedia.map(createEmojiCard)}
-      </dl>
+      <Header />
+      {notes.map((x) => (
+        <Note key={x.key} title={x.title} content={x.content} />
+      ))}
+      <Footer />
     </div>
   );
 }
