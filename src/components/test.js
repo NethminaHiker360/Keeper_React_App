@@ -1,37 +1,7 @@
-var numbers = [3, 56, 2, 48, 5];
+import emojipedia from "../emojipedia";
 
-//Map -Create a new array by doing something with each item in an array.
-var mapArray=numbers.map(function (num){
-    return num*10;
+var subArray=emojipedia.map(function(emoji){
+    return emoji.meaning.substring(0,100);
 });
-console.log("Map Array : "+mapArray);
 
-//Filter - Create a new array by keeping the items that return true.
-var filterArray =numbers.filter(function(num){
-    return num<10;
-});
-console.log("Filter Array : "+filterArray)
-
-//Reduce - Accumulate a value by doing something to each item in an array.
-
-var acumuateValue=numbers.reduce(function(acumutaleNumber,currentNumber){
-    return acumutaleNumber+currentNumber;
-});
-console.log('Acumulate Value : ' + acumuateValue);
-
-//Find - find the first item that matches from an array.
-var findNumber=numbers.find(function(num){
-    return num>10 && num<50;
-});
-console.log("Find Value : "+findNumber);
-
-//FindIndex - find the index of the first item that matches.
-var findNumberindex = numbers.findIndex(function (num) {
-  return num > 10 && num < 50;
-});
-console.log("find Index : "+findNumberindex);
-
-//subString
-
-var str="abcdfef";
-console.log("Sub String : "+str.substring(1,3));
+console.log(subArray);
