@@ -30,3 +30,8 @@ var findNumberindex = numbers.findIndex(function (num) {
   return num > 10 && num < 50;
 });
 console.log("find Index : "+findNumberindex);
+
+//subString
+
+var str="abcdfef";
+console.log("Sub String : "+str.substring(1,3));
