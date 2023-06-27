@@ -1,4 +1,5 @@
 import React from 'react';
+import Login from './Login';
 
 var isLogginedIn = false;
 
@@ -8,11 +9,7 @@ function renderConditionally() {
   } else {
     return (
       <div className="container">
-        <form className="form">
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
-          <button type="submit">Login</button>
-        </form>
+      <Login/>
       </div>
     );
   }
